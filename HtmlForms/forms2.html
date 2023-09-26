@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head> </head>
+  <body>
+    <h1>Formlar - Input Attribute</h1>
+    <hr />
+
+    <form autocomplete="off">
+      <label for="firstName">Adınız</label> <br />
+      <input name="firstName" type="text" placeholder="John" required /> <br />
+      <br />
+
+      <label for="lastName">Soyadınız</label> <br />
+      <input name="lastName" type="text" placeholder="Doe" required /> <br />
+      <br />
+
+      <label for="country">Ülke</label> <br />
+      <input name="country" type="text" value="Türkiye" readonly /> <br /><br />
+
+      <label for="city">Şehir</label> <br />
+      <input name="city" type="text" value="Eskişehir" disabled /> <br /><br />
+
+      <label for="password">Şifreniz</label> <br />
+      <input
+        name="password"
+        type="password"
+        placeholder="******"
+        size="8"
+        minlength="6"
+        maxlength="16
+        required"
+      />
+      <br />
+      <br />
+
+      <label>Doğum yeriniz</label> <br />
+      <input name="list" type="text" list="cities" /> <br />
+      <datalist id="cities">
+        <option value="Ankara"></option>
+        <option value="Adana"></option>
+        <option value="Bursa"></option>
+        <option value="Balıkesir"></option>
+        <option value="Eskişehir"></option>
+        <option value="Bursa"></option>
+      </datalist>
+      <br />
+      <br />
+
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
